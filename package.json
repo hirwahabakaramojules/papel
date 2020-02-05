@@ -1,0 +1,23 @@
+{
+  "name": "papel",
+  "version": "1.0.1",
+  "description": "Papel is a  banking application that powers banking operations like account creation, customer deposits, and withdrawals. where users can signup and create bank accounts online.",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d UI "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirwahabakaramojules/papel.git"
+  },
+  "author": "hirwa habakaramo jules",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirwahabakaramojules/papel/issues"
+  },
+  "homepage": "https://github.com/hirwahabakaramojules/papel#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gh-pages": "^2.2.0"
+  }
+}
