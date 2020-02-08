@@ -12,16 +12,15 @@
         <img class="logo" src="./assets/log.jpeg">
         <div class="nav">
             <a href="./index.html" class="up-btn home">home</a>
-            <a class="up-btn">Get Started </a>
+            <a class="up-btn" id="open-model-btn">Get Started </a>
 
         </div>
        
     </header>
-    <div class="main" style="width: auto;">
+    <div class="main" style="width: auto;">s
         <div class="txt-div">
             <h1 class="main-text">banking made easier and more accessible <span class="text-span">with us</span></h1>
             <p class="annex-text"> don't wait, jump in and start exploring the new version of digitalised banking</p>
-            <button class="down-btn">jump in !!!</button>
         </div>
         <div class="pic">
             <img class="main-pic" src="./assets/banking .png" style="width: 100%; height: 100%;">
@@ -30,6 +29,29 @@
     <footer>
         <p class="footer-txt">&copy; copywrite and all rights reserved <span class="papel-footer-txt">papel</span></p>
     </footer>
+    <div id="model">
+        <div class="model-container">
+            <div class="model-header">
+                <a class="login-link  model-links">login</a>
+                <a class="signup-link  model-links">signup</a>
+                <button class="close-btn">x</button>
+            </div>
+            <div class="model-body">
+                <form >
+                    <select required>
+                        <option class="client-option  opt" selected>client</option>
+                        <option class="teller-option  opt">teller </option>
+                        <option class="admin-option  opt">admin</option>
+                    </select>
+                    <input  type="text" placeholder="email" required>
+                    <input  type="password" required>
+                    <button class="login-btn" href="./pages/user-profile.html" type="submit">login</button>
+                </form>
+                
+            </div>
+            
+        </div>
+    </div>
 
     <script src="./js/home.js"></script>
 </body>
