@@ -29,28 +29,48 @@
     <footer>
         <p class="footer-txt">&copy; copywrite and all rights reserved <span class="papel-footer-txt">papel</span></p>
     </footer>
-    <div id="model">
+    <div id="login-model">
         <div class="model-container">
             <div class="model-header">
-                <a class="login-link  model-links">login</a>
-                <a class="signup-link  model-links">signup</a>
-                <button class="close-btn">x</button>
+                <a id="login-link">login</a>
+                <a id="signup-link">signup</a>
+                <button id="close-btn">x</button>
             </div>
-            <div class="model-body">
-                <form >
-                    <select required>
-                        <option class="client-option  opt" selected>client</option>
+          <form >
+                    <select id="select" required>
+                        <option>choose account type</option>
+                        <option class="client-option  opt" >client</option>
                         <option class="teller-option  opt">teller </option>
                         <option class="admin-option  opt">admin</option>
                     </select>
-                    <input  type="text" placeholder="email" required>
-                    <input  type="password" required>
-                    <button class="login-btn" href="./pages/user-profile.html" type="submit">login</button>
-                </form>
-                
-            </div>
-            
+                    <input  type="email" placeholder="enter your email" required>
+                    <input  type="password" required placeholder="enter your password">
+                    <input id="login-btn" onclick="destination()"  type="submit" value="login">
+                </form>           
+       
         </div>
+    </div>
+    <div id="signup-model">
+        <div class="model-container">
+            <div class="model-header">
+                <a id="login-link-on-signup" onclick="openLoginModel()">login</a>
+                <a id="signup-link-signup">signup</a>
+                <button id="close-btn-signup">x</button>
+            </div>
+          <form >                   
+                    <input  type="text" placeholder="first name" required>
+                    <input  type="text" placeholder="last name" required>
+                    <input  type="text" placeholder="enter your email" required>
+                    <select class="select" required>
+                        <option selected>user type</option>
+                        <option >client</option>
+                        <option >teller </option>
+                        <option >admin</option>
+                    </select>
+                    <input  type="password" required placeholder="enter your password">
+                    <input id="signup-btn" type="submit"  value="Register">
+                </form>
+
     </div>
 
     <script src="./js/home.js"></script>

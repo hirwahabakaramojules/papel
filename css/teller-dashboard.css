@@ -40,8 +40,7 @@ header{
     height:50px;    
     font-size: 25px;
     background-color:  white;
-    color: #2eb82e;
-    text-decoration: none;   
+    color: #2eb82e;   
 }
 .up-btn:hover{
     background-color: #2eb82e;
@@ -55,14 +54,7 @@ header{
     bottom: 0;
     left: 0;
 }
-.title{
-    float: left;
-    font-size: 30px;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-left: 10%; 
-}
+
 
 
 
