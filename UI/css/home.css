@@ -78,9 +78,9 @@ header{
     font-size: 1.75vw;
     text-transform: capitalize;
 }
-.down-btn{
+.open-btn{
     padding: 10px 20px;
-    font-size: 1.5vw;
+    font-size: 25px;
     text-transform: capitalize;
     color: white;
     background-color: #2eb82e;
