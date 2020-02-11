@@ -12,16 +12,15 @@
         <img class="logo" src="./assets/log.jpeg">
         <div class="nav">
             <a href="./index.html" class="up-btn home">home</a>
-            <a class="up-btn">Get Started</a>
+            <a class="up-btn" id="open-model-btn">Get Started </a>
 
         </div>
        
     </header>
-    <div class="main" style="width: auto;">
+    <div class="main" style="width: auto;">s
         <div class="txt-div">
             <h1 class="main-text">banking made easier and more accessible <span class="text-span">with us</span></h1>
             <p class="annex-text"> don't wait, jump in and start exploring the new version of digitalised banking</p>
-            <button class="down-btn">jump in !!!</button>
         </div>
         <div class="pic">
             <img class="main-pic" src="./assets/banking .png" style="width: 100%; height: 100%;">
@@ -30,6 +29,49 @@
     <footer>
         <p class="footer-txt">&copy; copywrite and all rights reserved <span class="papel-footer-txt">papel</span></p>
     </footer>
+    <div id="login-model">
+        <div class="model-container">
+            <div class="model-header">
+                <a id="login-link">login</a>
+                <a id="signup-link">signup</a>
+                <button id="close-btn">x</button>
+            </div>
+          <form >
+                    <select id="select" required>
+                        <option>choose account type</option>
+                        <option class="client-option  opt" >client</option>
+                        <option class="teller-option  opt">teller </option>
+                        <option class="admin-option  opt">admin</option>
+                    </select>
+                    <input  type="email" placeholder="enter your email" required>
+                    <input  type="password" required placeholder="enter your password">
+                    <input id="login-btn" onclick="destination()"  type="submit" value="login">
+                </form>           
+       
+        </div>
+    </div>
+    <div id="signup-model">
+        <div class="model-container">
+            <div class="model-header">
+                <a id="login-link-on-signup" onclick="openLoginModel()">login</a>
+                <a id="signup-link-signup">signup</a>
+                <button id="close-btn-signup">x</button>
+            </div>
+          <form >                   
+                    <input  type="text" placeholder="first name" required>
+                    <input  type="text" placeholder="last name" required>
+                    <input  type="text" placeholder="enter your email" required>
+                    <select class="select" required>
+                        <option selected>user type</option>
+                        <option >client</option>
+                        <option >teller </option>
+                        <option >admin</option>
+                    </select>
+                    <input  type="password" required placeholder="enter your password">
+                    <input id="signup-btn" type="submit"  value="Register">
+                </form>
+
+    </div>
 
     <script src="./js/home.js"></script>
 </body>
