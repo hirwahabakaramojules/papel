@@ -190,6 +190,11 @@ form{
     margin-top: 25px;
     
 }
+#no-pass{
+    font-size: 20px;
+    color:red;
+    display: none;
+}
 select{
     margin-bottom: 15px;
     width: 80%;

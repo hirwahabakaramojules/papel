@@ -12,6 +12,11 @@ const loginBtn = document.getElementById("login-btn");
 const client = "client";
 const teller = "teller";
 const admin = "admin";
+const noPass = document.getElementById("no-pass");
+const password = document.getElementById("password");
+const email = document.getElementById("email");
+const noSelect = select.value = "choose account type"
+
 // functions
 
 const openLoginModel = () => {
@@ -28,7 +33,8 @@ const closeModel = () => {
 }
 
 const destination = () =>{
-    if(select.value === client){
+    
+     if(select.value === client){
        return window.location.href = "./pages/user-profile.html"
     } else if(select.value === teller){
         return window.location.href = "./pages/teller-dashboard.html"
@@ -50,11 +56,18 @@ loginLink.addEventListener("click", openLoginModel);
 
 signupLink.addEventListener("click", openSignupModel);
 
-loginBtn.addEventListener("click",()=> {
-    console.log("i'm clicked");
-})
-
-
-
-
-
+// loginBtn.addEventListener("click",()=> {
+//     if (!password.value){
+//         noPass.style.display = "block";
+//         return ;
+//     }
+//      else if(select.value === client){
+//        return window.location.href = "./pages/user-profile.html"
+//     } else if(select.value === teller){
+//         return window.location.href = "./pages/teller-dashboard.html"
+//     }
+//     else if(select.value === admin){
+//         return window.location.href = "./pages/admin-dashboard.html"
+//     }
+   
+// })
