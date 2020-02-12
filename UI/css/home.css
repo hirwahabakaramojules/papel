@@ -195,6 +195,36 @@ form{
     color:red;
     display: none;
 }
+#no-mail{
+    font-size: 20px;
+    color:red;
+    display: none;
+}
+#no-pwd{
+    font-size: 20px;
+    color:red;
+    display: none;
+}
+#s-no-name{
+    font-size: 20px;
+    color:red;
+    display: none;
+}
+#s-no-pass{
+    font-size: 20px;
+    color:red;
+    display: none;
+}
+#s-no-mail{
+    font-size: 20px;
+    color:red;
+    display: none;
+}
+#s-no-pwd{
+    font-size: 20px;
+    color:red;
+    display: none;
+}
 select{
     margin-bottom: 15px;
     width: 80%;
