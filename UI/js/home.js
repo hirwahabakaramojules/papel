@@ -47,6 +47,7 @@ const pwdCheck =()=>{
     if(password.value.match(pwd)){
          destination();
         console.log("it matches");
+        noPwd.style.display = "none";
     }else{
         noPwd.style.display = "block";
         console.log("weak password");
@@ -57,6 +58,7 @@ const checkMail =() =>{
     if(email.value.match(mailFormat)){
         console.log("emailmatches");
         pwdCheck();
+        noMail.style.display = "none";
     }else{
         console.log('not matchin')
         noMail.style.display = "block";
@@ -83,6 +85,7 @@ const validateName = () =>{
     if(fullName.value){
         console.log("fullname is valid");
         validateSignupMail();
+
     }
     else{
         sNoname.style.display = "block";
