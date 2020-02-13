@@ -138,17 +138,6 @@ b{
 .yellow{
     color: rgb(170, 170, 57);
 }
-.new-btn{
-    background-color: #ccc;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    margin-bottom: 20px;
-    width: 80%;
-    border: none;
-    font-size: 20px;
-    text-align: left;
-}
 select{
     width: 50%;
     text-align: center;
@@ -175,7 +164,7 @@ select:hover:active{
     background-color: #ccc;
     color: black;
 }
-.submit:hover{
+.submit:hover:active{
     background-color: rgba(0,0,0,0.5);
     color: white;
 }
@@ -219,6 +208,16 @@ footer{
 @media(max-width: 670px){
     h3{
         font-size: 25px;
+    }
+    .panel{
+        display: flex;
+        flex-direction: column;
+    }
+    select{
+        width: 95%;
+    }
+    .submit{
+        width: auto;
     }
     label{
         font-size: 13px;
