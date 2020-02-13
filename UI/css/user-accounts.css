@@ -52,7 +52,7 @@ header{
     width: 100%;
     height:auto;
     display: grid;
-    bottom: 0;
+    margin-bottom: 25px;
     left: 0;
 }
 .title{
@@ -63,6 +63,24 @@ header{
     letter-spacing: 5px;
     margin-left: 10%; 
 }
+table{
+    width: 80%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left:10% ;
+    font-size: 1.7vw;
+    text-transform: capitalize;
+}
+td, th {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ccc;
+  }
 
 
 
@@ -72,12 +90,12 @@ header{
 
 footer{
     width: 100%;
-    height: 10%;
+    height: auto;
     background-color:  #2eb82e ;
-    margin-top: none;
+    margin-top: 100px;
     text-align: center;
-    padding-top: 1px;
-    position: fixed;
+    padding: 10px;
+    position: block;
     left: 0;
     bottom: 0;
 }
