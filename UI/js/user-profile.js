@@ -16,7 +16,7 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 const submit = () =>{
-  alert("thankyou for the request, wait for our confirmationm");
+  alert("thankyou for the request, wait for our confirmation");
   console.log("im submitted");
 
 }
