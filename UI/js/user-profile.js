@@ -1,8 +1,8 @@
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+const acc = document.getElementsByClassName("accordion");
+// let i;
 
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
   // 
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -13,4 +13,10 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
+}
+
+const submit = () =>{
+  alert("thankyou for the request, wait for our confirmationm");
+  console.log("im submitted");
+
 }
