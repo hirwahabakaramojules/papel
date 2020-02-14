@@ -11,19 +11,48 @@
     <header style="width: 100%;">
         <img class="logo" src="../assets/log.jpeg">
         <div class="nav">
-            <a href="./index.html" class="up-btn home">home</a>
+            <a href="./account-spec.html" class="up-btn home">accounts</a>
+            <a href="./admin-transactions.html" class="up-btn home">transactions</a>
             <a class="up-btn" id="open-model-btn">Get Started </a>
 
         </div>
        
     </header>
     <div class="main">
-        <h1>admin dashboard</h1>
-    </div>
-
-    <footer>
-        <p class="footer-txt">&copy; copywrite and all rights reserved <span class="papel-footer-txt">papel</span></p>
-    </footer>
-    
+        <h1 class="title">dashboard</h1>
+        <div class="info-container">
+                 <img src="../assets/mike.jpeg" class="client-picture" >
+                 <div class="client-details">
+                    <h3>client details</h3>
+                    <section>
+                        <label>first name:</label>
+                        <b>mike</b>
+                    </section>
+                    <section>
+                        <label>last name:</label>
+                        <b>kayihura</b>
+                    </section>
+                    <section>
+                        <label>email:</label>
+                        <b class="email">mikekayihura@self.me</b>
+                    </section>
+                    <section>
+                        <label>status</label>
+                        <b id="b-text">active</b>
+                    </section>
+                    <section>
+                        <label>change status:</label>
+                        <select id="select">
+                            <option>active</option>
+                            <option>banned</option>
+                            <option>pending</option>
+                        </select>
+                    </section>
+                 </div>
+        </div>
+        <footer>
+            <p class="footer-txt">&copy; copywrite and all rights reserved <span class="papel-footer-txt">papel</span></p>
+        </footer>
+    <script src="../js/admin-dashboard.js"></script>
 </body>
 </html>

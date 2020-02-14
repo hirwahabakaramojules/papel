@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: auto;
     width: auto;
     background-color: none;
 }
@@ -49,12 +49,17 @@ header{
 }
 .main{
     width: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     display: grid;
     bottom: 0;
     left: 0;
 }
-h1{
+.warning{
+    text-align: center;
+    color: red;
+    font-size: 25px;
+}
+.title{
     float: left;
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
@@ -62,15 +67,17 @@ h1{
     letter-spacing: 5px;
     margin-left: 10%;
 }
+
 table{
     width: 80%;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     text-align: center;
+    margin-top: 20px;
     margin-left:10% ;
+    margin-bottom: 20px;
     font-size: 1.7vw;
     text-transform: capitalize;
-    margin-top: 5%;
 }
 td, th {
     border: 1px solid #ccc;
@@ -81,97 +88,19 @@ td, th {
   tr:nth-child(even) {
     background-color: #ccc;
   }
-  .balance{
-      color: green;
-  }
-  #model{
-    display: none;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0,0,0.5);
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding-top: 50px;
-  }
-  .model-body{
-    overflow-y: auto;
-    max-height: calc(100vh - 150px);
-    width: 35%;
-    padding: 5px auto;
-    background-color: white;
-    margin: 50px auto;
-    /* border-radius: 20px; */
-  }
-  .model-head{
-    display: inline-flex;
-    height: auto;
-    width: 100%;
-    padding: 5px auto ;
-  }
-  .model-title{
-      width: 85%;
-      float: left;
-      left: 0;
-      text-align: center;
-      font-size: 25px;
+  .delete-btn{
+      width: auto;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      font-size: 40px;
       text-transform: capitalize;
-      color: #2eb82e;
-  }
-  #close-btn{
-      float: right;
-      width: 15%;
-      color: red;
-      font-size: 30px;
-      border: none;
-      background: none;
-
-  }
-  #close-btn:hover,#close-btn:active{
-    cursor: pointer;
-    color: black;
-  }
-  .model-main{
-      padding: 15px auto;
-      justify-content: center;
-      display: grid;
-
-      /* flex-direction: column; */
-  }
-  #money-box{
-      width: 80%;
-      padding: 8px ;
-      font-size: 20px;
-      margin: 20px auto;
-      border: none;
-      background-color: #f2f2f2;
-      border-radius: 10px;
-  }
-  #debit,#credit{
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      height: auto;
-      margin: 20px auto;
-      padding: 10px auto;
-      font-size: 20px;
-      text-transform: capitalize;
-      border: none;
-      background-color: #2eb82e;
+      background-color: red;
       color: white;
-      text-align: center;
+      border: none;
+      border-radius:10px ;
 
   }
   
-
-
-
-
-
-
-
-
-
 footer{
     width: 100%;
     background-color:  #2eb82e ;
@@ -200,18 +129,52 @@ footer{
         margin-top: 0px;
         margin-left: 40%;
     }
+    label{
+        font-size: 15px;
+    }
+    b{
+        font-size: 20px
+    }
 
 
 }
-@media (max-width: 500px){
-    header{
+@media(max-width: 670px){
+    h3{
+        font-size: 25px;
+    }
+    .panel{
+        display: flex;
+        flex-direction: column;
+    }
+    select{
+        width: 95%;
+    }
+    .submit{
+        width: auto;
+    }
+    label{
+        font-size: 13px;
+    }
+    b{
+        font-size: 8px;
+    }
+}
+
+ @media(max-height: 800px){
+    body{
         height: auto;
+        overflow-y: auto;
     }
-    .model-body{
-        width: 90%;
+    /* footer{
+        height: 15%;
+    } */
+ }
+ @media(max-height: 500px){
+    body{
+        height: auto;
+        overflow-y: auto;
     }
-
-
-}
-
- 
+    /* footer{
+        height: 20%;
+    } */
+ }

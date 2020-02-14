@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
     background-color: none;
 }
@@ -40,8 +40,7 @@ header{
     height:50px;    
     font-size: 25px;
     background-color:  white;
-    color: #2eb82e;
-    text-decoration: none;   
+    color: #2eb82e;   
 }
 .up-btn:hover{
     background-color: #2eb82e;
@@ -50,27 +49,48 @@ header{
 }
 .main{
     width: 100%;
-    height:auto;
+    max-height: 100vh;
     display: grid;
     bottom: 0;
     left: 0;
 }
-
-
-
-
-
-
-
-
-footer{
-    width: 100%;
-    height: 10%;
-    background-color:  #2eb82e ;
-    margin-top: none;
+h1{
+    float: left;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-left: 10%;
+}
+table{
+    width: 80%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
     text-align: center;
-    padding-top: 1px;
-    position: fixed;
+    margin-left:10% ;
+    font-size: 1.7vw;
+    text-transform: capitalize;
+    margin-top: 5%;
+}
+td, th {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ccc;
+  }
+  .balance{
+      color: green;
+  }
+  footer{
+    width: 100%;
+    background-color:  #2eb82e ;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+    position: block;
     left: 0;
     bottom: 0;
 }
@@ -82,18 +102,3 @@ footer{
     font-weight: bold;
     color: white;
 }
-
-@media (max-width: 1000px){
-    header{
-        height: auto;
-    }
-    .nav{
-        display: grid;
-        margin-top: 0px;
-        margin-left: 40%;
-    }
-
-
-}
-
- 
