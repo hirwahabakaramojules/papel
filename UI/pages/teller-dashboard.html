@@ -12,9 +12,9 @@
         <img class="logo" src="../assets/log.jpeg">
         <div class="nav">
             <a href="../index.html" class="up-btn home">home</a>
-            <a href="./user-profile.html" class="up-btn">profile</a>
+            <!-- <a href="./user-profile.html" class="up-btn">profile</a>
             <a href="./user-history.html" class="up-btn">history</a>
-            <a href="./user-accounts.html" class="up-btn">accounts</a>
+            <a href="./user-accounts.html" class="up-btn">accounts</a> -->
             <a href="../index.html" class="up-btn">log out </a>
 
         </div>
@@ -32,35 +32,35 @@
                 <th>date created</th>
                 <th>balance</th>
             </tr>
-            <tr>
+            <tr class="table-row">
                 <td><a class="account-no">#468778</a></td>
                 <td><a class="account-name">mike</a></td>
                 <td>current</td>
                 <td>24/10/2019</td>
                 <td class="balance">1000</td>
             </tr>
-            <tr>
+            <tr class="table-row">
                 <td><a class="account-no">#464878</a></td>
                 <td><a class="account-name">karangwa</a></td>
                 <td>current</td>
                 <td>24/10/2019</td>
-                <td class="balance">2000</td>
+                <td class="balance">2</td>
             </tr>
-            <tr>
+            <tr class="table-row">
                 <td><a class="account-no">#424778</a></td>
                 <td><a class="account-name">bosco</a></td>
                 <td>saving</td>
                 <td>24/10/2019</td>
                 <td class="balance">10000</td>
             </tr>
-            <tr>
+            <tr class="table-row">
                 <td><a class="account-no">#464678</a></td>
                 <td><a class="account-name">mike</a></td>
                 <td>savings</td>
                 <td>24/10/2019</td>
                 <td class="balance">1900</td>
             </tr>
-            <tr>
+            <tr class="table-row">
                 <td><a class="account-no">#464378</a></td>
                 <td><a class="account-name">mike</a></td>
                 <td>saving</td>
@@ -76,6 +76,27 @@
     <footer>
         <p class="footer-txt">&copy; copywrite and all rights reserved <span class="papel-footer-txt">papel</span></p>
     </footer>
-    
+    <div id="model">
+        
+        <div class="model-body">
+            <div class="model-head">
+                <h3 class="model-title">transactions</h3>
+                <button id="close-btn">x</button>
+            </div>
+            <div class="model-main">
+                <input type="text" id="money-box" placeholder="input amount">
+            <div id="action">
+                <button id="debit" >debit</button>
+                <button id="credit" >credit</button>
+
+            </div>
+           
+            </div>
+            
+            
+        
+        </div>
+    </div>
+    <script src="../js/teller-dashboard.js"></script>
 </body>
 </html>
