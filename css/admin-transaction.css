@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: auto;
+    min-height: 100vh;
     width: auto;
     background-color: none;
 }
@@ -49,17 +49,12 @@ header{
 }
 .main{
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     display: grid;
     bottom: 0;
     left: 0;
 }
-.warning{
-    text-align: center;
-    color: red;
-    font-size: 25px;
-}
-.title{
+h1{
     float: left;
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
@@ -67,17 +62,15 @@ header{
     letter-spacing: 5px;
     margin-left: 10%;
 }
-
 table{
     width: 80%;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     text-align: center;
-    margin-top: 20px;
     margin-left:10% ;
-    margin-bottom: 20px;
     font-size: 1.7vw;
     text-transform: capitalize;
+    margin-top: 5%;
 }
 td, th {
     border: 1px solid #ccc;
@@ -88,20 +81,10 @@ td, th {
   tr:nth-child(even) {
     background-color: #ccc;
   }
-  .delete-btn{
-      width: auto;
-      padding: 10px 20px;
-      margin-bottom: 20px;
-      font-size: 40px;
-      text-transform: capitalize;
-      background-color: red;
-      color: white;
-      border: none;
-      border-radius:10px ;
-
+  .balance{
+      color: green;
   }
-  
-footer{
+  footer{
     width: 100%;
     background-color:  #2eb82e ;
     margin-top: 100px;
@@ -119,62 +102,3 @@ footer{
     font-weight: bold;
     color: white;
 }
-
-@media (max-width: 1000px){
-    header{
-        height: auto;
-    }
-    .nav{
-        display: grid;
-        margin-top: 0px;
-        margin-left: 40%;
-    }
-    label{
-        font-size: 15px;
-    }
-    b{
-        font-size: 20px
-    }
-
-
-}
-@media(max-width: 670px){
-    h3{
-        font-size: 25px;
-    }
-    .panel{
-        display: flex;
-        flex-direction: column;
-    }
-    select{
-        width: 95%;
-    }
-    .submit{
-        width: auto;
-    }
-    label{
-        font-size: 13px;
-    }
-    b{
-        font-size: 8px;
-    }
-}
-
- @media(max-height: 800px){
-    body{
-        height: auto;
-        overflow-y: auto;
-    }
-    /* footer{
-        height: 15%;
-    } */
- }
- @media(max-height: 500px){
-    body{
-        height: auto;
-        overflow-y: auto;
-    }
-    /* footer{
-        height: 20%;
-    } */
- }
