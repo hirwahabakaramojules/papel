@@ -2,10 +2,15 @@ const chai = require("chai")
 const chaiHttp = require("chai-http") ;
 const app = require("../app.js") ;
 
+
 chai.use(chaiHttp);
+
+
 chai.should();
+
+
 describe("welcome message", ()=>{
-    it("app should return a message on root", ()=>{
+    it("should return a welcome message on root", ()=>{
         chai.request(app)
         .get("/")
         .then((res)=>{
